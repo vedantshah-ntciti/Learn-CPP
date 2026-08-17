@@ -3,21 +3,26 @@
 
 class Complex
 {
-    explicit Complex(double = 0 , double = 0);
-    Complex &setRealPart(double);
-    Complex &setImaginaryPart(double);
-    Complex &setPoint(double , double);
+    public:
+        explicit Complex(double = 0.0 , double = 0.0);
+        Complex &setRealPart(double);
+        Complex &setImaginaryPart(double);
+        Complex &setPoint(double , double);
 
-    Complex& add(Complex&);
-    Complex& subtract(Complex&);
-    Complex& multiply(Complex&);
+        Complex add(Complex&);
+        Complex subtract(Complex&);
+        Complex multiply(Complex&);
 
-    double getRealPart() const;
-    double getImaginaryPart() const;
-    double getMod() const;
-    double getArg() const;
-    void printPoint() const;
-    void printEuler() const;
+        double getRealPart() const;
+        double getImaginaryPart() const;
+        double getMod() const;
+        double getArg() const;
+        void printPoint() const;
+        void printEuler() const;
+
+    private:
+        double realPart;
+        double imagPart;
 };
 
 #endif
