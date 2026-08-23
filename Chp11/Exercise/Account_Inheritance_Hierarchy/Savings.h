@@ -6,7 +6,7 @@
 class Savings : public Account
 {
     public:
-        explicit Savings(double = 0.0 , double);
+        explicit Savings(double , double= 0.0 );
 
         double calculateInterest() const;
     

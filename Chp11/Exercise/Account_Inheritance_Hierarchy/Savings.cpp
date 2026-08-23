@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Savings::Savings(double balance, double roi) : Account(balance)
+Savings::Savings(double roi, double balance) : Account(balance)
 {
     InterestRate = roi;
 }
