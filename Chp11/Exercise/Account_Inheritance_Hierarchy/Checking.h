@@ -6,10 +6,11 @@
 class Checking : public Account
 {
     public:
-        explicit Checking(double = 0.0, double);
+        explicit Checking(double, double= 0.0 );
 
         void debit(double);
         void credit(double);
+        
     
     private:
         double feeAmount;
