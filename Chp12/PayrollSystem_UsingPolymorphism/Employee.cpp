@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Employee::Employee(std::string & first,std::string &last,std::string &pan) : firstName(first), lastName(last), PANnumber(pan)
+Employee::Employee(const std::string &first,const std::string &last,const std::string &pan) : firstName(first), lastName(last), PANnumber(pan)
 {
 
 }
