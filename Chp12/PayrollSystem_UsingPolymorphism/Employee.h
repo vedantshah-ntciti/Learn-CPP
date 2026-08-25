@@ -6,7 +6,7 @@
 class Employee
 {
     public:
-        Employee(std::string &,std::string &,std::string &);
+        Employee(const std::string &,const std::string &,const std::string &);
 
         virtual ~Employee() {}
 
